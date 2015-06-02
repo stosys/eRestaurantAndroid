@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/categories"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pizzaBtn"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/pizza"
+        android:onClick="onClickHandler" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roastBtn"
+        android:layout_alignBottom="@+id/pizzaBtn"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/roast"
+        android:onClick="onClickHandler" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soupBtn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/soup"
+        android:onClick="onClickHandler" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appetizerBtn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/appetizer"
+        android:onClick="onClickHandler" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alcoholicBtn"
+        android:src="@drawable/alcoholic"
+        android:layout_below="@+id/soupBtn"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickHandler" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nalcoholicBtn"
+        android:src="@drawable/nonalch"
+        android:layout_alignTop="@+id/alcoholicBtn"
+        android:layout_alignStart="@+id/appetizerBtn"
+        android:onClick="onClickHandler" />
+</RelativeLayout>
